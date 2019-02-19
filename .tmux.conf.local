@@ -311,9 +311,9 @@ bind -n S-Left previous-window
 bind -n S-Right next-window
 
 # Set easier window split keys and open the pane on current directory
-bind-key v split-window -h -c '#{pane_current_path}' # Create new pane
-bind-key h split-window -v -c '#{pane_current_path}' # Create new pane
-bind-key c new-window -c '#{pane_current_path}' # Create new window
+bind -r v split-window -h -c '#{pane_current_path}' # Create new pane
+bind -r h split-window -v -c '#{pane_current_path}' # Create new pane
+bind -r c new-window -c '#{pane_current_path}' # Create new window
 
 ## Required by MacOS Sierra and Sierra High
 set -g default-command "reattach-to-user-namespace -l $SHELL"
